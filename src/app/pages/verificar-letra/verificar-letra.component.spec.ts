@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { VerificarNumeroComponent } from './verificar-numero.component';
+import { VerificarNumeroComponent } from './verificar-letra.component';
 
 describe('VerificarNumeroComponent', () => {
   let component: VerificarNumeroComponent;

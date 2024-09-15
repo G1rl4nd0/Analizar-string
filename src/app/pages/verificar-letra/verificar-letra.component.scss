@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Altura da tela */
+  background-color: #f0f0f0; /* Cor de fundo da página */
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Espaçamento interno */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra */
+  border-radius: 8px; /* Bordas arredondadas */
+  background-color: white; /* Cor de fundo da caixa */
+  width: 90%; /* Largura da caixa (ajustável) */
+  max-width: 400px; /* Largura máxima */
+}
+
+h2 {
+  margin-bottom: 15px; /* Espaçamento abaixo do título */
+}
+
+input[type="text"] {
+  width: 100%; /* Largura total do container */
+  padding: 10px; /* Espaçamento interno */
+  border: 1px solid #ccc; /* Borda */
+  border-radius: 4px; /* Bordas arredondadas */
+  margin-bottom: 10px; /* Espaçamento abaixo do input */
+}
+
+button {
+  padding: 10px 15px; /* Espaçamento interno do botão */
+  background-color: #007bff; /* Cor de fundo do botão */
+  color: white; /* Cor do texto do botão */
+  border: none; /* Sem borda */
+  border-radius: 4px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor pointer ao passar o mouse */
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+p {
+  margin: 5px 0; /* Espaçamento acima e abaixo dos parágrafos */
+}
+
+/* Responsividade */
+@media (max-width: 500px) {
+  .box {
+    padding: 10px; /* Reduzir o padding em telas pequenas */
+  }
+
+  input[type="text"],
+  button {
+    width: 100%; /* Manter a largura total em telas pequenas */
+  }
+}

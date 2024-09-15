@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="box">
+    <h2>Verificar a letra 'a'</h2>
+    <input type="text" [(ngModel)]="texto" placeholder="Digite um texto" />
+    <button (click)="verificarLetra()">Verificar</button>
+
+    <div *ngIf="mostrarMensagem">
+      <div *ngIf="existeLetraA">
+        <p>A letra 'a' aparece {{ quantidade }} vez na palavra.</p>
+      </div>
+      <div *ngIf="!existeLetraA && texto.length > 0">
+        <p>A letra 'a' não foi encontrada na string.</p>
+      </div>
+    </div>
+  </div>
+</div>
